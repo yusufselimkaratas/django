@@ -1,0 +1,11 @@
+{% if son_soru_listesi %}
+  <ul>
+    {% for soru in son_soru_listesi %}
+      <li> <a href="/polls/{{soru_id}}/">{{
+        soru.soru_metni}}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+    <p> Hiç bir oy yok henüz.</p>
+
+    {% endif %}
